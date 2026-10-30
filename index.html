@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordleen</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div class="juego">
+        <h1>WORDLEEN</h1>
+        <p>Adivina la palabra secreta</p>
+
+        <div class="pista">
+            <h3>PISTA / CATEGORÍA</h3>
+            <h2 id="categoria">Cargando...</h2>
+        </div>
+
+        <p>Tienes 6 intentos para adivinar.</p>
+
+        <div id="tablero" class="tablero"></div>
+
+        <form id="formulario">
+            <input type="text" id="respuesta"
+                   placeholder="Escribe tu palabra"
+                   autocomplete="off">
+            <button type="submit">Probar</button>
+        </form>
+
+        <h3 id="mensaje">¡Buena suerte!</h3>
+
+        <button id="nuevo">Nueva palabra</button>
+
+        <p class="leyenda">
+            🟩 Correcta | 🟨 Otra posición | ⬛ No aparece
+        </p>
+    </div>
+
+    <script src="juego.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+
+body {
+    background: #101827;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+    padding: 30px;
+}
+
+.juego {
+    max-width: 450px;
+    margin: auto;
+    padding: 25px;
+    background: #192437;
+    border-radius: 15px;
+}
+
+h1 {
+    color: #65d6a6;
+    font-size: 40px;
+}
+
+.pista {
+    background: #293348;
+    border: 2px solid #d4a72c;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.pista h3 {
+    color: #d4a72c;
+}
+
+.tablero {
+    display: grid;
+    gap: 7px;
+    width: 300px;
+    margin: 20px auto;
+}
+
+.fila {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 7px;
+}
+
+.celda {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #253349;
+    border: 2px solid #40516a;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.correcta {
+    background: #36a878;
+}
+
+.posicion {
+    background: #d4a72c;
+    color: black;
+}
+
+.fuera {
+    background: #ff0000;
+}
+
+input {
+    padding: 12px;
+    width: 180px;
+    border-radius: 7px;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+button {
+    padding: 12px;
+    background: #65d6a6;
+    color: #10251d;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #36a878;
+}
+
+#mensaje {
+    min-height: 25px;
+}
+
+.leyenda {
+    font-size: 12px;
+    color: #b8c4d6;
+}
